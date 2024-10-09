@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <p id="parrafo1">Este es el primer párrafo</p>
+<p>Este es el segundo párrafo</p>
+<p>Este es el tercer párrafo</p>
+<input type="button" value="Cambiar tamaño de fuente"
+onClick="cambiarTamFuente()">
+</body>
+<script>
+    function cambiarTamFuente(){
+        var parrafo= document.getElementById("parrafo1");
+        var padre = parrafo.parentNode;
+        padre.style.fontSize= "40px";
+
+    }
+</script>
+</html>
